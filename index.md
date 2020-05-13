@@ -1,6 +1,7 @@
 ---
 title: Derin Harekat
 layout: default
+permalink: /
 ---
 
 <style>
