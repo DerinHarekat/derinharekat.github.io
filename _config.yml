@@ -1,0 +1,12 @@
+# Site settings
+name: Derin Harekat
+title: Derin Harekat
+description: "niredharekat"
+baseurl: ""
+author: berkantkz
+repository: DerinHarekat/derinharekat.github.io
+#exclude: [""]
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
