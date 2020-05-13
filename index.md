@@ -1,13 +1,11 @@
 ---
 title: Derin Harekat
 layout: default
-permalink: /
 ---
 
 <style>
 	.vidContainer {
 		max-width: 480px;
-		max-height: 320px;
 		display: flex;
 		flex-direction: column;
 		margin: 30px;
@@ -21,6 +19,11 @@ permalink: /
 	
 	.vidContainer .vidName {
 		padding: 15px;
+	}
+	
+	.vidContainer video {
+		max-width: 480px;
+		max-height: 320px;
 	}
 </style>
 
