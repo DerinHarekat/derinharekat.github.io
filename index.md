@@ -20,8 +20,13 @@ title: nireD takeraH
 	}
 	
 	.vidContainer video {
-		max-width: 480px;
-		max-height: 320px;
+		/* max-width: 480px;
+		max-height: 320px; */
+	}
+	
+	.video-js {
+		width: 480px;
+		height: 360px;
 	}
 </style>
 
