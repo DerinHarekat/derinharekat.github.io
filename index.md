@@ -9,7 +9,6 @@ title: nireD takeraH
 		flex-direction: column;
 		margin: 30px;
 		padding: 30px;
-		border: 1px solid black;
 	}
 	
 	.vidContainer > * {
@@ -28,10 +27,11 @@ title: nireD takeraH
 
 {% assign videosAvailable = "" | split: ',' %}{% for video in site.static_files %}{% if video.path contains 'videos' %}{% assign videosAvailable = videosAvailable | push: video %}{% endif %}{% endfor %}
 {% for video in videosAvailable %}
+## {{ video.basename }}
 <div class="vidContainer">
-<span class="vidName">{{ video.name }}</span>
 <video controls>
 <source src="{{ video.path }}" type="video/mp4">
 </video>
 </div>
+---
 {% endfor %}
