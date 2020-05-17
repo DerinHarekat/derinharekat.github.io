@@ -10,3 +10,4 @@ repository: DerinHarekat/derinharekat.github.io
 # Build settings
 markdown: kramdown
 permalinks: pretty
+theme: jekyll-theme-leap-day
