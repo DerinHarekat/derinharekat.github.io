@@ -1,6 +1,5 @@
 ---
 title: Derin Harekat
-layout: default
 ---
 
 <style>
