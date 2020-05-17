@@ -25,11 +25,14 @@ title: nireD takeraH
 	}
 </style>
 
+<link href="//vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
+
 {% assign videosAvailable = "" | split: ',' %}{% for video in site.static_files %}{% if video.path contains 'videos' %}{% assign videosAvailable = videosAvailable | push: video %}{% endif %}{% endfor %}
 {% for video in videosAvailable %}
 ## {{ video.basename }}
 <div class="vidContainer">
-<video controls>
+<video id="my-player" class="video-js" controls preload="auto" data-setup='{}'>
 <source src="{{ video.path }}" type="video/mp4">
 </video>
 </div>
